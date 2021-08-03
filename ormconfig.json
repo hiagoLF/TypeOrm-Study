@@ -7,6 +7,9 @@
   "database": "mussum",
   "entities": ["src/models/**/*.ts"],
   "migrations": ["src/migrations/**/*.ts"],
+  "cache": {
+    "duration": 20000
+  },
   "cli": {
     "migrationsDir": ["src/migrations/"],
     "entitiesDir": "src/models"

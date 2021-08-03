@@ -8,7 +8,7 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
-import Lesson from './Lesson';
+import Lesson from './lesson';
 import Student from './student';
 
 @Entity('class')
@@ -21,6 +21,9 @@ export default class Class {
     unique: true,
   })
   name: string;
+
+  @Column()
+  description: string;
 
   @Column()
   duration: number;

@@ -1,5 +1,5 @@
 import { Column, Entity, OneToOne, PrimaryGeneratedColumn } from 'typeorm';
-import Lesson from './Lesson';
+import Lesson from './lesson';
 
 @Entity('content')
 export default class Content {
